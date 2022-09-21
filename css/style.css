@@ -57,6 +57,13 @@ h2 {
 h3 {
   font-weight: bolder;
   font-size: 20px;
+  margin-top: 50px;
+  font-family: 'Arial', sans-serif;
+}
+
+h4 {
+  font-weight: bolder;
+  font-size: 20px;
   margin: none;
   font-family: 'Arial', sans-serif;
 }
@@ -65,4 +72,58 @@ a {
   fonto-family: 'Arial', sans-serif;
   font-size: 15px;
   font-weight:bolder;
+}
+
+.single-img {
+  display: block;
+  width: 50%;
+  height: auto;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+
+.img-container {
+  float: left;
+  width: 33.33%;
+  padding: 5px;
+}
+
+.img-container-2 {
+  float: left;
+  width: 50%;
+  padding: 5px;
+}
+
+.row-img{
+  width: 100%;
+}
+
+figure {
+  display: block;
+  margin: auto;
+}
+
+figcaption {
+  text-align: center;
+  font-style: italic;
+  margin-bottom: 50px;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
 }
