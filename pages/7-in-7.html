@@ -1,0 +1,240 @@
+<!doctype html>
+<html class="no-js" lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>Ranger Liu: 7 in 7</title>
+  <meta name="description" content="Documentation for 7 in 7">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <meta property="og:title" content="Documentation for 7 in 7">
+  <meta property="og:type" content="website">
+
+  <link rel="stylesheet" href="../css/style.css">
+
+  <meta name="theme-color" content="#fafafa">
+</head>
+<body>
+  <!-- title -->
+  <div class='titlebox'>
+    <div class='titlepane'>
+      <h1>7-in-7: Documentation & Reflection</h1>
+      <h4><a href="https://docs.google.com/presentation/d/1ojyCFjSNWcX0Q_rJzOVRhls8iYu9G4w7sA9MltaI7P8/edit?usp=sharing"
+             target="_blank">Presentation</a></h4>
+      <a href="../index.html" target="_self">Home</a>
+    </div>
+  </div>
+
+
+  <div class="body">
+
+    <h4 id="contents">Contents</h4>
+    <ul>
+    <li><a href="#overview">Overview</a></li>
+    <li><a href="#proj-1">Project 1: OP-1 Music</a></li>
+    <li><a href="#proj-2">Project 2/7: OP-1 Music --> Rubik's Cube Scramble (PHYSICAL)</a></li>
+    <li><a href="#proj-3">Project 3: Rubik's Cube Solve --> Instrumental Music (COGNITION)</a></li>
+    <li><a href="#proj-4">Project 4: Instrumental Music --> Chess Midgame (PHYSICAL)</a></li>
+    <li><a href="#proj-5">Project 5/6: Chess Playthrough --> DSP Music with MaxMSP (COGNITION)</a></li>
+    <li><a href="#reflection">Blog Reflection</a></li>
+    <br>
+
+
+
+
+
+
+    <hr>
+    <h3 id="overview">Overview</h3>
+    <p>
+      These prototypes explore the flattening of information that occurs in the creation of sound and in other cognitive
+      processes that combine "pure" thought with physical manipulation.
+    </p>
+    <p>
+      There are many theories, structures, and ideas that go into the making of sounds using various techniques. However,
+      when these sounds are physically heard, the cognitive process of creation is flattened into a single sonic experience.
+      Similar loss of information occurs with Rubik's Cubes and with chess. The external physical movements of Rubik's Cube faces omit the
+      pattern recognition and problem-solving that go into finding a solution, and the external physical movements
+      of chess pieces around the board omit the strategy and future-thinking that go into playing chess.
+    </p>
+    <p>
+      During this week, I used different methods of creating sound to explore a cycle of sonification and reverse
+      sonification with Rubik's Cubes and chess. I turned purely physical aspects of sound
+      into Rubik's Cube or chess positions, and then turned the cognitive processes of Rubik's cube solving or chess-playing
+      back into sound.
+    </p>
+    <img src="../images/7-in-7/projs-overview.png" class='row-img'>
+    <p>
+      The initial goal was to externalize cognition through sound, to make thought processes <i>known</i> instead of
+      <i>flattened</i>.
+      However, these experiments showed that to properly externalize cognition requires more than just sonification:
+      the addition of spatial and visual elements would likely be more successful, especially with these particular
+      cognitive processes (creating sound, solving Rubik's cubes, playing chess) that combine "pure" thought with physical
+      manipulation.
+    </p>
+    <br>
+    <hr>
+
+
+
+
+    <h3 id="proj-1">Project 1: OP-1 Music</h3>
+    <p>
+      <b>Goal:</b> make a simple track using the OP-1 synthesizer, borrowed from Yoshe.
+    </p>
+    <img src="../images/7-in-7/op-1.JPG" class='row-img'>
+    <p>
+      <b>Result:</b>
+    </p>
+    <audio controls>
+            <source src="../audio/7-in-7/op1-music.wav" type="audio/wav">
+  </audio>
+    <p>
+      <b>Process:</b> I referenced the <a href="https://teenage.engineering/_img/6275254dfb267f0004b9e832_original.pdf" target="_blank">OP-1 manual</a> to learn the basics of using the machine.
+    </p>
+
+  <p>
+    <b>Reflection:</b> The synthesizer interface was very intuitive, but the process itself of making and layering loops is
+    quite different from how I usually approach creating music. It's very easy to lose sound settings,
+    and it's difficult to undo recorded tracks without deleting everything. This built-in "flattening"
+    of information is part of the charm of the synthesizer, which is stylized after old-timey tape recorders.
+    Tracks made on the OP-1 aren't "meant" to be replicated in the same way as composing sheet music, but it
+    would be interesting to see if this ephemerality could be captured with some sort of notation, especially
+    for teaching new users.
+  </p>
+  <p>
+    <b>Future Explorations:</b> This synthesizer occupies a very interesting spot in terms of accessibility: it is easier to
+    understand than any other physical synthesizer I've ever used, yet its price ($1299) puts it out of reach for
+    any synth beginners. Given another few days, I'd like to explore possible notations that might bring the
+    synth's usability to a wider audience, especially for teaching the basics of synthesizers and loop-based
+    composition.
+  </p>
+  <br>
+    <a href="#top" style="display: block; text-align: center;">Back to Top</a>
+    <hr>
+
+
+
+
+
+    <h3 id="proj-2">Project 2/7: OP-1 Music --> Rubik's Cube Scramble (PHYSICAL)</h3>
+    <p>
+      <b>Goal:</b> Use purely physical elements of the OP-1 music to generate a Rubik's Cube scramble (Project 2).
+    </p>
+    <p>
+      <b>Sub-goal:</b> Visualize this generation (Project 7).
+    </p>
+    <p>
+      <b>Result:</b> Using a data-processing approach, I used the waveforms of the OP-1 tracks to
+      generate a Rubik's Cube scramble, shown below.
+    </p>
+    <div class="clearfix">
+      <div class="img-container">
+        <img src="../images/7-in-7/scramble-1.JPG" class="row-img">
+      </div>
+      <div class="img-container">
+        <img src="../images/7-in-7/scramble-2.JPG" class="row-img">
+      </div>
+      <div class="img-container">
+        <img src="../images/7-in-7/scramble.gif" class="row-img">
+      </div>
+    </div>
+    <img src="../images/7-in-7/final-scramble.png" class='row-img'">
+    <p>
+      <b>Process:</b> I used Python to load in the audio files, including both the stereo master track and the four
+      mono layered tracks. I split the master into its two channels, giving me a total of six tracks that I then mapped
+      to the six faces of the Rubik's Cube.
+    </p>
+    <img src="../images/7-in-7/op1-to-cube-face-map.png" class='single-img' style="width: 70%;">
+    <p>
+      I then "binned" each wave, turning the data into a collection of points and lines. The binning
+      process splits the data into equal timechunks, takes the average amplitude in that chunk as the y-value of the
+      new point, and takes the time at which the original wave was closest to the average amplitude as the x-value of
+      the new point. This allows for automated binning that also creates points with unique timestamps (x-values).
+    </p>
+    <img src="../images/7-in-7/op1-binned.png" class='single-img' style="width: 70%;">
+    <p>Then, for each binned track, I converted each line segment into a clockwise or counterclockwise turn of
+      the track's mapped face, with upwards lines (positive slope) corresponding to clockwise turns, and downwards lines
+      (negative slopes) corresponding to counterclockwise turns. Each turn had a timestamp according to where
+      the line started or stopped.
+    </p>
+    <img src="../images/7-in-7/track-notations.png" class='row-img'">
+    <p> Finally, all the movements for all the faces were consolidated and ordered by timestamps to create the final scramble.
+    </p>
+    <img src="../images/7-in-7/final-scramble.png" class='row-img'">
+    <p>
+      The scramble is notated according to conventional <a href="https://jperm.net/3x3/moves" target="_blank">
+        Rubik's Cube notation</a>: L, R, F, B, U, D means Left, Right,
+      Front, Back, Up, and Down faces, and an apostrophe means counterclockwise (no apostrophe means clockwise).
+      Double moves are denoted with the number 2. For example, a scramble notated as "U R2 L'" means "turn the Up face
+      clockwise, then turn the Right face twice, and then turn the Left face counterclockwise".
+    </p>
+    <p>
+      On the seventh day, I created an animated website in p5.js
+      (<a href="https://ryurongliu.github.io/7-in-7-project-7/ ">linked here</a>) to visualize the process of generating
+      the scramble. It has some issues animating correctly at different screen aspect ratios, but the overall idea
+      was to see the binning and notation extraction in "real-time".
+    </p>
+    <p>
+      <b>Project 2 code:</b> <a href="https://github.com/ryurongliu/7-in-7-project-2">Github repo</a>
+      </p>
+      <p>
+      <b>Project 7 code:</b> <a href="https://github.com/ryurongliu/7-in-7-project-7">Github repo</a>
+    </p>
+    <a href="#top" style="display: block; text-align: center;">Back to Top</a>
+    <hr>
+
+
+
+
+
+
+    <h3 id="proj-3">Project 3: Rubik's Cube Solve --> Instrumental Music (COGNITION)</h3>
+    <p>
+      Goal: Use the cognitive process of solving a Rubik's Cube, mapped to the cognitive process of instrumental composition,
+      to generate a short instrumental track.
+    </p>
+    <a href="#top" style="display: block; text-align: center;">Back to Top</a>
+    <hr>
+
+
+
+
+
+
+    <h3 id="proj-4">Project 4: Instrumental Music --> Chess Midgame (PHYSICAL)</h3>
+    <p>
+      Goal: Use purely physical elements of the instrumental music to generate chess moves to a midgame position.
+    </p>
+    <a href="#top" style="display: block; text-align: center;">Back to Top</a>
+    <hr>
+
+
+
+
+
+    <h3 id="proj-5">Project 5/6: Chess Playthrough --> DSP Music with MaxMSP (COGNITION)</h3>
+    <p>
+      Goal: Use the cognitive process of playing chess, mapped to the cognitive process of creating DSP sounds, to
+      generate synthesized sounds (Project 6).
+      Subgoal: Experiment with MaxPy to generate sample dynamic synthesizers and sequencers as proof-of-concept
+      for technical requirements of chess music (Project 5).
+    </p>
+    <a href="#top" style="display: block; text-align: center;">Back to Top</a>
+    <hr>
+
+
+
+
+
+
+
+    <h2 id="reflection">Blog Reflection</h2>
+
+    <a href="#top" style="display: block; text-align: center;">Back to Top</a>
+  </div>
+
+
+</body>
+
+</html>
